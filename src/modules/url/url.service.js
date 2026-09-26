@@ -32,13 +32,13 @@ export const getUrlByShortCode = async (shortCode) => {
   return url;
 }
 
-export const incrementClickCount = async (urlId) => {
-  return await prisma.url.update({
-    where: { id: urlId },
-    data: {
-      clicks: {
-        increment: 1,
-      },
-    },
-  });
-};
+// export const incrementClickCount = async (urlId) => {
+//   return await prisma.url.update({
+//     where: { id: urlId },
+//     data: {
+//       clicks: {
+//         increment: 1,
+//       },
+//     },
+//   });
+// };

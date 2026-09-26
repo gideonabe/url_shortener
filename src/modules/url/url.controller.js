@@ -32,7 +32,7 @@ export const redirect = async (req, res, next) => {
       });
     }
 
-    incrementClickCount(url.id);
+    // incrementClickCount(url.id);
 
     return res.redirect(302, url.longUrl);
   } catch (error) {
