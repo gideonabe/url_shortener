@@ -1,4 +1,4 @@
-import { createShortUrl, getUrlByShortCode, incrementClickCount } from "./url.service.js";
+import { createShortUrl, getUrlByShortCode } from "./url.service.js";
 
 export const create = async (req, res, next) => {
   try {
