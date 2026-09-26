@@ -16,8 +16,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 
+
 app.use("/api/v1", routes);
-app.get("/:shortCode", redirect);
 
 app.get("/health", (req, res) => {
   res.status(200).json({
@@ -25,6 +25,9 @@ app.get("/health", (req, res) => {
     message: "URL shortener API is healthy",
   });
 });
+
+app.get("/:shortCode", redirect);
+
 
 app.use(errorHandler);
 
