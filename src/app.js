@@ -53,6 +53,10 @@ app.get("/db-test", async (req, res, next) => {
   }
 });
 
+app.get("/ping", (req, res) => {
+  res.json({ status: "ok"})
+})
+
 
 app.get("/:shortCode", redirect);
 
