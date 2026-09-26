@@ -33,7 +33,7 @@ app.get("/db-test", async (req, res, next) => {
 
     const url = await prisma.url.findUnique({
       where: {
-        shortCode: "YOUR_SHORT_CODE",
+        shortCode: "kcsnmUs",
       },
       select: {
         id: true,
